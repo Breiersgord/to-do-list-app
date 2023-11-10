@@ -3,10 +3,14 @@ function newItem(){
 
 //javascript
 //1. Adding a new item to the list of items: 
-   let li = document.createElement("li");
-   let inputValue = document.getElementById("input").value;
-   let text = document.createTextNode(inputValue);
-   li.appendChild(text);
+   let li = $("<li></li>"); //reflects open and closed tags for list
+   let inputValue = $("#input").val(); //val() gets input values from index page; stored values into variable 'inputValue'
+   li.append(inputValue); //append values into list (should result in HTML elements that look like below)
+
+   // <ol id="list">
+   	//<li>the value of the (inputValue) from the input element</li>
+     //</ol>
+     
 
    if (inputValue === '') {
      alert("You must write something!");
