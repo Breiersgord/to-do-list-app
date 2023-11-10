@@ -31,10 +31,10 @@ function newItem(){
  	crossOutButton.append(document.createTextNode("X")); //we keep document.createTextNode bc we aren't pulling this from the HTML, we are creating "X" here
  	li.append(crossOutButton);
 
- 	crossOutButton.addEventListener("click", deleteListItem);
+ 	crossOutButton.on("click", deleteListItem);
  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
    function deleteListItem(){
- 		li.classList.add("delete")
+ 		li.addClass("delete");
  	}
  // 4. Reordering the items: 
    $('#list').sortable();
