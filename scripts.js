@@ -24,7 +24,7 @@ function newItem(){
  		li.toggleClass("strike");
  	}
 
- 	li.addEventListener("dblclick",crossOut);
+ 	li.on("dblclick",crossOut); //on is the jQuery equivalent to 'addEventListener'
 
  //3(i). Adding the delete button "X": 
    let crossOutButton = document.createElement("crossOutButton");
