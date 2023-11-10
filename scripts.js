@@ -27,7 +27,7 @@ function newItem(){
  	li.on("dblclick",crossOut); //on is the jQuery equivalent to 'addEventListener'
 
  //3(i). Adding the delete button "X": 
-   let crossOutButton = $("<button></button>"); 
+   let crossOutButton = $("<crossOutButton></crossOutButton>"); 
  	crossOutButton.append(document.createTextNode("X")); //we keep document.createTextNode bc we aren't pulling this from the HTML, we are creating "X" here
  	li.append(crossOutButton);
 
