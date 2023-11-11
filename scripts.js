@@ -15,7 +15,7 @@ function newItem(){
    if (inputValue === '') {
      alert("You must write something!");
    } else {
-     let list = $('#list');
+     let list = $("#list");
      list.append(li);
    }
 
@@ -37,6 +37,6 @@ function newItem(){
  		li.addClass("delete");
  	}
  // 4. Reordering the items: 
-   $('#list').sortable();
+   $("#list").sortable();
 
 }
